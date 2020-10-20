@@ -3,7 +3,7 @@
 Exercise from Kattis testing system. Level - easy
 ``
 
-Problem: 
+## Issue 
 While working on a new filesystem, KattisFS, Kattis has encountered the problem of fragmentation. A file is 
 fragmented when it uses multiple disc blocks that are not contiguous (stored together in the same part of disk).
 In her first implementation, the data got spread out over the disk, which makes access to the data very inefficient.
