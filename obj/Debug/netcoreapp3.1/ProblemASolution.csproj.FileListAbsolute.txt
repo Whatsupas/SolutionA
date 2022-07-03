@@ -37,3 +37,17 @@ C:\Users\RobertasTutlys\Desktop\DOC\DiverseA\due\ProblemASolution\obj\Debug\netc
 C:\Users\RobertasTutlys\Desktop\DOC\DiverseA\due\ProblemASolution\obj\Debug\netcoreapp3.1\ProblemASolution.dll
 C:\Users\RobertasTutlys\Desktop\DOC\DiverseA\due\ProblemASolution\obj\Debug\netcoreapp3.1\ProblemASolution.pdb
 C:\Users\RobertasTutlys\Desktop\DOC\DiverseA\due\ProblemASolution\obj\Debug\netcoreapp3.1\ProblemASolution.genruntimeconfig.cache
+C:\Users\29998robtut\Source\Repos\SolutionA\bin\Debug\netcoreapp3.1\ProblemASolution.exe
+C:\Users\29998robtut\Source\Repos\SolutionA\bin\Debug\netcoreapp3.1\ProblemASolution.deps.json
+C:\Users\29998robtut\Source\Repos\SolutionA\bin\Debug\netcoreapp3.1\ProblemASolution.runtimeconfig.json
+C:\Users\29998robtut\Source\Repos\SolutionA\bin\Debug\netcoreapp3.1\ProblemASolution.runtimeconfig.dev.json
+C:\Users\29998robtut\Source\Repos\SolutionA\bin\Debug\netcoreapp3.1\ProblemASolution.dll
+C:\Users\29998robtut\Source\Repos\SolutionA\bin\Debug\netcoreapp3.1\ProblemASolution.pdb
+C:\Users\29998robtut\Source\Repos\SolutionA\obj\Debug\netcoreapp3.1\ProblemASolution.csprojAssemblyReference.cache
+C:\Users\29998robtut\Source\Repos\SolutionA\obj\Debug\netcoreapp3.1\ProblemASolution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\29998robtut\Source\Repos\SolutionA\obj\Debug\netcoreapp3.1\ProblemASolution.AssemblyInfoInputs.cache
+C:\Users\29998robtut\Source\Repos\SolutionA\obj\Debug\netcoreapp3.1\ProblemASolution.AssemblyInfo.cs
+C:\Users\29998robtut\Source\Repos\SolutionA\obj\Debug\netcoreapp3.1\ProblemASolution.csproj.CoreCompileInputs.cache
+C:\Users\29998robtut\Source\Repos\SolutionA\obj\Debug\netcoreapp3.1\ProblemASolution.dll
+C:\Users\29998robtut\Source\Repos\SolutionA\obj\Debug\netcoreapp3.1\ProblemASolution.pdb
+C:\Users\29998robtut\Source\Repos\SolutionA\obj\Debug\netcoreapp3.1\ProblemASolution.genruntimeconfig.cache

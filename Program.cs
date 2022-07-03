@@ -9,88 +9,76 @@ namespace ProblemASolution
         static void Main(string[] args)
         {
 
-              var linesQueue = new Queue<string>();
-              string ln = string.Empty;
+            var linesQueue = new Queue<string>();
+            var inputLine = string.Empty;
+            
+            // Input
+            while (true)
+            {
+                inputLine = Console.ReadLine();
+                if (string.IsNullOrEmpty(inputLine))
+                {
+                    linesQueue.Enqueue(inputLine);
+                    inputLine = Console.ReadLine();
 
+                    if (string.IsNullOrEmpty(inputLine))
+                        break;
+                }
+                linesQueue.Enqueue(inputLine);
+            }
                     
-                        while (true)
-                        {
-                            ln = Console.ReadLine();
-                            if (String.IsNullOrEmpty(ln))
-                            {
-                                linesQueue.Enqueue(ln);
-                                ln = Console.ReadLine();
-                                if (string.IsNullOrEmpty(ln))
-                                {
-                                    break;
-                                }
-                            }
-                            linesQueue.Enqueue(ln);
-                        }
-                    
+            // Output
+            try 
+            {
+                var line = string.Empty;
+                var lineLength = 0;
+                var lastIndex = 0;
+                var starsInLine = 0;
+                var totalStars = 0;
 
-                    try {
+                while (linesQueue.Any())
+                {
 
-                        string line = string.Empty;
-                        int lineLength = 0;
-                        int lastIndex = 0;
-                        int starsInLine = 0;
-                        int totalStars = 0;
+                    line = linesQueue.Dequeue();
 
-                        while (linesQueue.Any())
-                        {
-
-                            line = linesQueue.Dequeue();
-
-                            if (!String.IsNullOrEmpty(line) && line.Length > 0)
-                            {
-
-                                lineLength = line.Length;
-                                lastIndex = lineLength - 1 - totalStars;
-                                starsInLine = line.Count(x => x == '*');
-                                totalStars += starsInLine;
-                                var rangeFrom = lastIndex - starsInLine + 1;
-
-                                var availableIndexes = Enumerable.Range(rangeFrom, starsInLine).ToDictionary(x => x);
-
-                                for (int i = 0; i < lineLength; i++)
-                                {
-                                    if (availableIndexes.ContainsKey(i))
-                                    {
-                                        Console.Write("*");
-                                    }
-                                    else
-                                    {
-                                        Console.Write(".");
-                                    }
-                                }
-
-                                Console.WriteLine();
-
-                            }
-                            else
-                            {
-                                lineLength = 0;
-                                lastIndex = 0;
-                                starsInLine = 0;
-                                totalStars = 0;
-
-                                if (linesQueue.Count != 0)
-                                {
-                                    Console.WriteLine();
-                                }
-
-                            }
-
-                        }
-
-
-                    }
-                    catch (NullReferenceException e)
+                    if (!string.IsNullOrEmpty(line) && line.Length > 0)
                     {
-                        Console.WriteLine("Output line");
-                        Console.WriteLine(e.Message);
+
+                        lineLength = line.Length;
+                        lastIndex = lineLength - 1 - totalStars;
+                        starsInLine = line.Count(x => x == '*');
+                        totalStars += starsInLine;
+                        var rangeFrom = lastIndex - starsInLine + 1;
+
+                        var availableIndexes = Enumerable.Range(rangeFrom, starsInLine).ToDictionary(x => x);
+
+                        for (int i = 0; i < lineLength; i++)
+                        {
+                            if (availableIndexes.ContainsKey(i))
+                                Console.Write("*");
+                            else
+                                Console.Write(".");
+                        }
+
+                        Console.WriteLine();
                     }
+                    else
+                    {
+                        lineLength = 0;
+                        lastIndex = 0;
+                        starsInLine = 0;
+                        totalStars = 0;
+
+                        if (linesQueue.Count != 0)
+                            Console.WriteLine();
+                    }
+                }
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine("Output line");
+                Console.WriteLine(e.Message);
+            }
             
         }
     }
