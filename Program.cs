@@ -50,11 +50,11 @@ namespace ProblemASolution
                         totalStars += starsInLine;
                         var rangeFrom = lastIndex - starsInLine + 1;
 
-                        var availableIndexes = Enumerable.Range(rangeFrom, starsInLine).ToDictionary(x => x);
+                        var availableIndexes = Enumerable.Range(rangeFrom, starsInLine).ToHashSet(); 
 
                         for (int i = 0; i < lineLength; i++)
                         {
-                            if (availableIndexes.ContainsKey(i))
+                            if (availableIndexes.Contains(i))
                                 Console.Write("*");
                             else
                                 Console.Write(".");
